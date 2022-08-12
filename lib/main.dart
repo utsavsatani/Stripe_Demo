@@ -7,7 +7,7 @@ import 'package:flutter_stripe/flutter_stripe.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-  Stripe.publishableKey = "Your_key";
+  Stripe.publishableKey = "your key";
   await Stripe.instance.applySettings();
   Stripe.merchantIdentifier = 'any string works';
   runApp(const MyApp());
@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
+
 
 
   @override

@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Map<String, dynamic> body = {'amount': '200', 'currency': currency, 'payment_method_types[]': 'card'};
       print(body);
       var response = await http.post(Uri.parse('https://api.stripe.com/v1/payment_intents'), body: body, headers: {
-        'Authorization': 'Bearer sk_test_51KtYn3ELtEuzS0TK6Ai5tOJfRlhw2uSBOOVrhGXhGFiD0PTP5c2x0zH1VCKfInGwyx3a8jfXI7908DbbY6aea8de00r4lKg89e',
+        'Authorization': 'Bearer Your-Secert-Key',
         'Content-Type': 'application/x-www-form-urlencoded'
       });
       print('Create Intent reponse ===> ${response.body.toString()}');
